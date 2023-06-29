@@ -17276,11 +17276,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 8
   m_Material: {fileID: 6200000, guid: 534400b5ddc904e48b6f0257c70ac56f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &2097832099
 MonoBehaviour:
@@ -17296,19 +17296,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amountOfJumps: 1
   facingDirection: 1
+  lastWallJumpDirection: 0
   isGrounded: 0
   isTouchingWall: 0
   isWallSliding: 0
-  moveSpeed: 10
-  jumpForce: 16
-  wallSlideSpeed: 2
+  canNormalJump: 0
+  canWallJump: 0
+  isAttemptingToJump: 0
+  canMove: 0
+  canFlip: 0
+  hasWallJumped: 0
+  moveSpeed: 9
+  jumpForce: 20
+  wallSlideSpeed: 1
   groundCheckRadius: 0.5
-  wallCheckDistance: 0.5
+  wallCheckDistance: 0.6
   moveForceInAir: 50
   airDragMultiplier: 0.95
   variableJumpHeightMultiplier: 0.5
   wallHopForce: 10
-  wallJumpForce: 20
+  wallJumpForce: 30
+  jumpTimerSet: 0.15
+  TurnTimerSet: 0.1
+  wallJumpTimerSet: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
